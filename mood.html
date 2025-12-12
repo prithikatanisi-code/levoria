@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood Tracker – Levoria</title>
+
+  <style>
+    body { margin: 0; font-family: Arial; background: #f7faff; text-align: center; }
+
+    .header {
+      padding: 20px;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      background: linear-gradient(-45deg, #a6c9ff, #d5baff, #ffc3e3, #b2f0e3);
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .moods {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      width: 120px;
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">Mood Tracker</div>
+
+  <h2>How are you feeling today?</h2>
+
+  <div class="moods">
+    <div class="card">😊 Happy</div>
+    <div class="card">😔 Sad</div>
+    <div class="card">😣 Stressed</div>
+    <div class="card">😐 Okay</div>
+  </div>
+
+</body>
+</html>
